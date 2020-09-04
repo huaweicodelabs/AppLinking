@@ -54,9 +54,19 @@ public class MainActivity extends AppCompatActivity {
         AGConnectAppLinking.getInstance();
     }
     private void createAppLinking() {
-        AppLinking.Builder builder = new AppLinking.Builder().setUriPrefix(DOMAIN_URI_PREFIX)
-                .setDeepLink(Uri.parse(DEEP_LINK)).setAndroidLinkInfo(new AppLinking.AndroidLinkInfo.Builder().build());
-        longTextView.setText(builder.buildAppLinking().getUri().toString());
+        AppLinking.Builder builder = new AppLinking.Builder()
+                .setUriPrefix(DOMAIN_URI_PREFIX)
+                .setDeepLink(Uri.parse(DEEP_LINK))
+                .setAndroidLinkInfo(new AppLinking.AndroidLinkInfo.Builder().build())
+                .setSocialCardInfo(new AppLinking.SocialCardInfo.Builder()
+                        .setTitle("华为开发者大会")
+                        .setImageUrl("https://developer.huawei.com/consumer/cn/events/hdc2020/img/kv-pc-cn.png?v0808")
+                        .setDescription("Description").build())
+                .setCampaignInfo(new AppLinking.CampaignInfo.Builder()
+                        .setName("HDC")
+                        .setSource("AGC")
+                        .setMedium("App").build());
+		longTextView.setText(builder.buildAppLinking().getUri().toString());
 
         builder.buildShortAppLinking().addOnSuccessListener(shortAppLinking -> {
             shortTextView.setText(shortAppLinking.getShortUrl().toString());
