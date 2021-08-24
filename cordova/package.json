@@ -1,0 +1,33 @@
+{
+  "name": "com.huawei.applinkingdemo",
+  "displayName": "AppLinking",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^9.0.0",
+    "cordova-plugin-whitelist": "^1.3.4"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-whitelist": {},
+      "cordova-plugin-agc-config": {},
+      "cordova-plugin-agc-applinking": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "dependencies": {
+    "@cordova-plugin-agconnect/applinking": "1.2.0-beta.1",
+    "@cordova-plugin-agconnect/remoteconfig": "1.2.0-beta.1"
+  }
+}
