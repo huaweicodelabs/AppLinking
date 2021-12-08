@@ -1,0 +1,63 @@
+{
+  "app": {
+    "bundleName": "com.huawei.agconnect.applinking",
+    "vendor": "huawei",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "com.huawei.agconnect.applinking",
+    "name": ".MyApplication",
+    "mainAbility": "com.huawei.agconnect.applinking.MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home",
+              "android.intent.action.VIEW"
+            ],
+            "actions": [
+              "action.system.home",
+              "entity.system.default",
+              "entity.system.browsable"
+            ],
+            "uris": [
+              {
+                "scheme": "agckit",
+                "host": "www.example.com"
+              }
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "name": "com.huawei.agconnect.applinking.MainAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "permissions": [
+          "com.huawei.agconnect.core.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.huawei.agconnect.core.provider.AGConnectInitializeAbility",
+        "type": "data",
+        "uri": "dataability://com.huawei.agconnect.applinking.AGConnectInitializeAbility"
+      }
+    ]
+  }
+}
