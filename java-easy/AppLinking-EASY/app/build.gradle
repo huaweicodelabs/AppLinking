@@ -40,6 +40,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 	// Add HUAWEI App Linking SDK
-    implementation 'com.huawei.agconnect:agconnect-applinking:1.6.2.300'
+    implementation 'com.huawei.agconnect:agconnect-applinking:1.7.3.300'
     implementation 'com.huawei.hms:hianalytics:6.3.2.300'
 }

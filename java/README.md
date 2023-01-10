@@ -1,34 +1,34 @@
 # AppLinking Demo
 
-## Introduction
+## 简介
 
-The AppLinking service allows AppLinking. AppLinking are links that work across platforms even on devices where your app is not installed. You can use AppLinking to direct users to promotional information or native app content that they can share with others. You can create AppLinking and send them to users, or users can share AppLinking dynamically generated in your app. Anyone who receives an AppLinking can tap it to access the linked content.
+AppLinking服务允许AppLinking。AppLinking是跨平台工作的链接，即使在未安装应用程序的设备上也是如此。您可以使用AppLinking将用户引导到他们可以与他人共享的促销信息或本机应用程序内容。您可以创建AppLinking并将其发送给用户，也可以共享在您的应用程序中动态生成的AppLinking。任何收到AppLinking的人都可以点击它访问链接的内容。
 
-## Preparation
+## 准备
 
-Before using the demo app, prepare your Android development environment.
+在使用演示应用程序之前，请准备好Android开发环境。
 
-### Register as a developer.
+### 注册成为开发者
 
-Register a [HUAWEI account](https://developer.huawei.com/consumer/en/).
+注册一个 [华为账号](https://developer.huawei.com/consumer/en/).
 
-### Create an app.
+### 创建应用
 
-Create an app and set Package type to APK (Android app).Then enable AppLinking  and adding a URL Prefix by referring the chapter [Creating a Link in AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/).
+创建应用，类型选择APK（Android应用），然后打开AppLinking，并参考章节添加URL前缀。 [Creating a Link in AppGallery Connect](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/).
 
-### Build
+### 构建
 
-To build this demo, please first import the demo in the Android Studio (3.x+). Then download the file "agconnect-services.json" of the app on AGC, and add the file to the app root directory(\app) of the demo.
+要构建此demo，请首先在Android Studio (3.x+)中导入演示。 然后在AGC上下载应用的文件“agconnect-services.json”，并将该文件添加到演示的应用根目录（\app）中。
 
-## Environment Requirements
+## 环境要求
 
-Android Studio 3.0 or later.
+Android Studio 3.0 或以上.
 
-## Sample Code
+## 示例代码
 
-Main entry of the app, which processes received links.
-Sample code: src\main\java\com\huawei\applinkingdemo\MainActivity.java
+应用的主入口，处理接收到的链接。
+示例代码: src\main\java\com\huawei\applinkingdemo\MainActivity.java
 
-## License
+## 证书许可
 
-AppLinking demo is licensed under the [Apache License, version 2.0] (http://www.apache.org/licenses/LICENSE-2.0).
+AppLinking demo is 在 [Apache License, version 2.0] (http://www.apache.org/licenses/LICENSE-2.0) 下获得许可。

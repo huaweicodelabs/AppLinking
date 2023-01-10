@@ -23,9 +23,9 @@ dependencies {
     testImplementation 'junit:junit:4.13'
     ohosTestImplementation 'com.huawei.ohos.testkit:runner:1.0.0.100'
 
-    implementation 'com.huawei.agconnect:agconnect-core-harmony:1.2.0.300'
-    implementation 'com.huawei.agconnect:agconnect-applinking-harmony:1.1.0.300'
-    implementation 'com.huawei.hms:hianalytics-harmony:6.2.0.300'
+    implementation 'com.huawei.agconnect:agconnect-core-harmony:1.3.1.300'
+    implementation 'com.huawei.agconnect:agconnect-applinking-harmony:1.3.1.300'
+    implementation 'com.huawei.hms:hianalytics-harmony:6.3.2.300'
 }
 decc {
     supportType = ['html','xml']
